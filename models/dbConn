@@ -1,0 +1,26 @@
+<?php
+
+$servername = "localhost";
+
+//localhost
+$username = "root";
+$password = "";
+$db = "test";
+
+//server host
+/*
+$username = "id12845517_ghteam";
+$password = "Qwerty@123";
+$db = "id12845517_shps_db";
+ */
+
+// Create connection
+$con = mysqli_connect($servername, $username, $password,$db);
+
+// Check connection
+if (!$con) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+
+?>
